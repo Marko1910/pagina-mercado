@@ -1,4 +1,4 @@
-import { Leaf, Menu, User } from "lucide-react";
+import { Leaf, Menu, User, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -37,10 +37,12 @@ const Header = () => {
               <a href="#" className="block py-2 text-gray-600 hover:text-green-600">Proyectos</a>
               <a href="#" className="block py-2 text-gray-600 hover:text-green-600">Sobre Nosotros</a>
               <a href="#" className="block py-2 text-gray-600 hover:text-green-600">Contacto</a>
-              <button className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center my-2">
-                <User className="h-4 w-4 mr-2" />
-                Login
-              </button>
+              <Link to="login">
+                <button className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center my-2">
+                  <User className="h-4 w-4 mr-2" />
+                  Login
+                </button>
+              </Link>
             </div>
           )}
         </div>
