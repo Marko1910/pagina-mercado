@@ -21,7 +21,7 @@ export const Carrusel = () => {
         <div className="w-full h-screen">
           <img
             className="w-full h-full object-cover"
-            src="/imagenes/imagen 1.webp" alt="Imagen 1" />
+            src={`/imagenes/hero${i+1}.png`} alt="Imagen 1" />
         </div>
       ))}
     </Slider>
